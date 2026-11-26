@@ -31,6 +31,11 @@ p{margin:0}
 /* ヘビー13: 3つの台と石 */
 .art b{width:72px;display:flex;flex-direction:column;align-items:center;gap:3px;border-bottom:8px solid var(--c)}
 .art s{text-decoration:none;display:grid;place-items:center;height:26px;background:var(--fg);color:var(--surface);font:400 .85rem "Dela Gothic One",sans-serif;border-radius:46% 54% 48% 52%/58% 56% 44% 42%}
+/* グラデーション: 中央ほど明るい7つの容器 */
+.art u{flex:1;max-width:36px;height:52px;text-decoration:none;background:#17191a;border:1.5px solid #6d7677;border-radius:6px 6px 12px 12px}
+.art u:nth-child(2),.art u:nth-child(6){background:#4e5456}
+.art u:nth-child(3),.art u:nth-child(5){background:#9ea5a7}
+.art u:nth-child(4){background:#fff}
 </style>
 </head>
 <body>
@@ -57,6 +62,14 @@ p{margin:0}
     <h2>ヘビー13</h2>
     <p>3つの台に石を積み、合計を13以上にすると罰点を受ける読み合いゲーム。</p>
     <p class="info">あなた＋COMで3〜7人 ・ 全14ラウンド</p>
+    <span class="go"><span>あそぶ</span><span aria-hidden="true">→</span></span>
+  </a>
+
+  <a class="game" href="https://ijiabc-maker.github.io/gradation/">
+    <div class="art" aria-hidden="true"><u></u><u></u><u></u><u></u><u></u><u></u><u></u></div>
+    <h2>グラデーション</h2>
+    <p>相手の容器の色から数字を推測して、自分の数字をぶつける読み合いゲーム。</p>
+    <p class="info">あなた vs COM ・ 全7ラウンド</p>
     <span class="go"><span>あそぶ</span><span aria-hidden="true">→</span></span>
   </a>
 </main>
